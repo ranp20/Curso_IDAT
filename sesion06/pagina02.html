@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"> 
+        <title>JQUERY - UI</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+    </head>
+    <body style=" font-family: sans-serif; background:#fafafa; margin: 0; padding: 2% 30%; box-sizing: border-box; text-align: center;">
+        <h1 style="margin: auto;">LISTA DE EFECTOS DE Jquery-UI</h1>
+        <div style="text-align: start;">
+        <!--- --- EFECTO ACORDEÓN --- --->
+        <h2>1.&nbsp;&nbsp;&nbsp; Selección en Acordeón</h2>
+        <!--- --- CREAR UN CONTENEDOR CON TITULO Y UN PÁRRAFO--- --->
+        <div id="acordion">
+            <h3>SESIÓN - 01</h3>
+            <div>Introducción a las páginas html</div>
+            <h3>SESIÓN - 02</h3>
+            <div>Manejo de la hoja de estilos</div>
+            <h3>SESIÓN - 03</h3>
+            <div>egecto con imágenes - filtrado</div>
+            <h3>SESIÓN - 04</h3>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis et quisquam magni in, iure natus deserunt alias eveniet velit laborum nesciunt facilis totam sed rem beatae deleniti consequatur corrupti?</div>
+            <h3>SESIÓN - 05</h3>
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo asperiores ducimus aspernatur laborum, reiciendis vero quidem ipsa, magni deleniti saepe maiores molestiae rerum quis debitis quaerat obcaecati minima eveniet eos.</div>
+        </div>
+        </div>
+        <script type="text/javascript">
+
+            $("#acordion").accordion();
+        </script>
+
+        <!--- --- EFECTO ACORDEÓN --- --->
+        <div style="text-align: start;">
+        <h2>2.&nbsp;&nbsp;&nbsp; Autocompletado Simple</h2>
+        <input type="text" id="autocompletar">
+        </div>
+        <script type="text/javascript">
+
+            //Inicializar un array de objetos
+            var paises = ["Perú","Paraguay","Uruguay","Brasil","Venezula","Bolivia","Venezuela","Chile","Ecuador","Colombia","Guyana",]
+            
+            //Intanciar al método autocomplete({ source :llamar a la variable})
+            $("#autocompletar").autocomplete({ source : paises});
+
+        </script>
+    </body>
+</html> 
